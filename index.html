@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Malla Curricular Veterinaria</title>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+    <h1>Malla Curricular - Medicina Veterinaria</h1>
+
+    <div class="grid">
+        <!-- PRIMER AÑO -->
+        <button class="materia" id="MV-1000" data-prerequisitos="">Anatomía Veterinaria I</button>
+        <button class="materia" id="MV-1200" data-prerequisitos="">Lenguaje y Redacción Técnica</button>
+        <button class="materia" id="FA-1400" data-prerequisitos="">Química Orgánica</button>
+        <button class="materia" id="MV-1500" data-prerequisitos="">Historia y Organización Veterinaria</button>
+        <button class="materia" id="GM-1200" data-prerequisitos="">Biología General</button>
+        <button class="materia" id="EG-1201" data-prerequisitos="">Curso Extracurricular I</button>
+
+        <button class="materia" id="MV-1010" data-prerequisitos="MV-1000">Anatomía Veterinaria II</button>
+        <button class="materia" id="MV-1520" data-prerequisitos="">Etología y Bienestar Animal</button>
+        <button class="materia" id="MV-1400" data-prerequisitos="">Embriología Veterinaria</button>
+        <button class="materia" id="GM-1500" data-prerequisitos="">Bioestadística</button>
+        <button class="materia" id="EG-1202" data-prerequisitos="">Curso Extracurricular II</button>
+
+        <!-- SEGUNDO AÑO -->
+        <button class="materia" id="MV-1510" data-prerequisitos="MV-1500">Fisiología Sistémica</button>
+        <button class="materia" id="MV-1305" data-prerequisitos="FA-1400">Bioquímica General</button>
+        <button class="materia" id="MV-1600" data-prerequisitos="">Histología Veterinaria</button>
+        <button class="materia" id="IG-1010" data-prerequisitos="">Inglés I</button>
+        <button class="materia" id="MV-1810" data-prerequisitos="">Zoología Veterinaria</button>
+        <button class="materia" id="MV-1801" data-prerequisitos="">Prácticas I</button>
+
+        <button class="materia" id="MV-1521" data-prerequisitos="MV-1510">Fisiología Patológica</button>
+        <button class="materia" id="MV-1820" data-prerequisitos="GM-1200">Enfermedades Genéticas</button>
+        <button class="materia" id="IG-1020" data-prerequisitos="IG-1010">Inglés II</button>
+        <button class="materia" id="VE-1700" data-prerequisitos="">Ética Médica Veterinaria</button>
+        <button class="materia" id="MV-1020" data-prerequisitos="MV-1010">Anatomía Patológica</button>
+        <button class="materia" id="MV-1802" data-prerequisitos="MV-1801">Prácticas II</button>
+
+        <!-- TERCER AÑO -->
+        <button class="materia" id="MV-1840" data-prerequisitos="GM-1200">Microbiología Veterinaria</button>
+        <button class="materia" id="MV-2100" data-prerequisitos="MV-1305">Farmacología General</button>
+        <button class="materia" id="MV-1850" data-prerequisitos="MV-1010">Diagnóstico por Imagen</button>
+        <button class="materia" id="MV-3700" data-prerequisitos="MV-1510">Inmunología Veterinaria</button>
+        <button class="materia" id="IG-1030" data-prerequisitos="IG-1020">Inglés III</button>
+        <button class="materia" id="MV-1803" data-prerequisitos="MV-1802">Prácticas III</button>
+
+        <button class="materia" id="MV-2110" data-prerequisitos="MV-2100">Farmacología Sistémica</button>
+        <button class="materia" id="MV-1830" data-prerequisitos="MV-1000,MV-1010,MV-1510">Propedéutica Pequeñas Especies</button>
+        <button class="materia" id="TD-3000" data-prerequisitos="GM-1500">Metodología Investigación I</button>
+        <button class="materia" id="MV-1870" data-prerequisitos="MV-1600">Patología Veterinaria</button>
+        <button class="materia" id="IG-1040" data-prerequisitos="IG-1030">Inglés IV</button>
+        <button class="materia" id="MV-1804" data-prerequisitos="MV-1803">Prácticas IV</button>
+
+        <!-- CUARTO AÑO -->
+        <button class="materia" id="MV-4530" data-prerequisitos="MV-1810">Enfermedades Parasitarias</button>
+        <button class="materia" id="MV-4380" data-prerequisitos="">Seminario Emprendedurismo</button>
+        <button class="materia" id="MV-4520" data-prerequisitos="MV-1830">Propedéutica Especies Mayores</button>
+        <button class="materia" id="MV-4540" data-prerequisitos="MV-1870">Patología Porcina y Avícola</button>
+        <button class="materia" id="IG-1050" data-prerequisitos="IG-1040">Inglés V</button>
+        <button class="materia" id="MV-1805" data-prerequisitos="MV-1804">Prácticas V</button>
+
+        <button class="materia" id="MV-4360" data-prerequisitos="MV-1840">Enf. Infecciosas Rumiantes</button>
+        <button class="materia" id="MV-4500" data-prerequisitos="MV-1000,MV-1010,MV-1510">Cirugía General</button>
+        <button class="materia" id="MV-1890" data-prerequisitos="MV-1510">Enf. no Infecciosas Especies</button>
+        <button class="materia" id="MV-3910" data-prerequisitos="MV-1840">Laboratorio Clínico</button>
+        <button class="materia" id="IG-1060" data-prerequisitos="IG-1050">Inglés VI</button>
+        <button class="materia" id="MV-1806" data-prerequisitos="MV-1805">Prácticas VI</button>
+
+        <!-- QUINTO AÑO -->
+        <button class="materia" id="MV-4310" data-prerequisitos="GM-1500,MV-4360">Epizootiología Veterinaria</button>
+        <button class="materia" id="MV-3915" data-prerequisitos="MV-2110">Toxicología Veterinaria</button>
+        <button class="materia" id="MV-4350" data-prerequisitos="MV-1510">Enf. no Infecciosas Rumiantes</button>
+        <button class="materia" id="MV-4510" data-prerequisitos="MV-4500">Cirugía Operativa</button>
+        <button class="materia" id="MV-4600" data-prerequisitos="MV-1400,MV-1510">Teriogenología Rumiantes</button>
+        <button class="materia" id="MV-1807" data-prerequisitos="MV-1806">Prácticas VII</button>
+
+        <button class="materia" id="MV-4370" data-prerequisitos="MV-1870">Fauna Silvestre y Zoológico</button>
+        <button class="materia" id="MV-4900" data-prerequisitos="MV-4600">Teriogenología Equinos, etc</button>
+        <button class="materia" id="TD-3001" data-prerequisitos="TD-3000">Metodología Investigación II</button>
+        <button class="materia" id="MD-3030" data-prerequisitos="MV-4310">Salud Pública</button>
+        <button class="materia" id="MV-4315" data-prerequisitos="MV-4310">Epizootiología Específica</button>
+        <button class="materia" id="MV-1808" data-prerequisitos="MV-1807">Prácticas VIII</button>
+
+        <button class="materia" id="MV-4420" data-prerequisitos="MV-4360,MV-4530">Enf. Exóticas y Emergentes</button>
+        <button class="materia" id="MV-1860" data-prerequisitos="MV-4360,MV-1305,MV-1870">HACCP Inocuidad</button>
+        <button class="materia" id="MV-4800" data-prerequisitos="">Legislación Veterinaria</button>
+        <button class="materia" id="MV-4390" data-prerequisitos="MV-1870">Patología Acuícola</button>
+        <button class="materia" id="MV-5010" data-prerequisitos="MV-1510">Mercadeo y Regencia</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
